@@ -1,9 +1,15 @@
 package Warmup1;
 
 public class LoneTeen {
-    public boolean loneTeen(int a, int b) {
-        return ((a>13 && a<19) && b!=13 || b!=19) || ((b>13 && b<19)&& a!=13 || a!=19);
 
+    public static void main(String[] args) {
+
+        System.out.println(loneTeen(14,13));
+    }
+    public  static boolean loneTeen(int a, int b) {
+       boolean aTeen= (a>=13 && a<=19);
+       boolean bTeen= (b>=13 && b<=19);
+        return (aTeen && !bTeen) || (!aTeen && bTeen);
     }
 
 }

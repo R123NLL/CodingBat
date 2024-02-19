@@ -1,14 +1,16 @@
 package Warmup1;
 
+import static java.lang.Math.abs;
+import static java.lang.Math.max;
+
+
 public class Close10 {
-    public int close10(int a, int b) {
-        if (Math.abs(10 - a) > Math.abs(10 - b)){
-            return a;
 
-        }else if (Math.abs(10-b)> Math.abs(10-a)){
-            return b;
-        }else return 0;
-
+    public static void main(String[] args) {
+        System.out.println(close10(3,8));
+    }
+    public static int close10(int a, int b) {
+        return 0;
     }
 
 }

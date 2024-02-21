@@ -10,7 +10,18 @@ public class Close10 {
         System.out.println(close10(3,8));
     }
     public static int close10(int a, int b) {
-        return 0;
+        int c =0;
+        boolean tie= abs(10-a)==abs(10-b);
+        boolean closeA=abs(10-a)<abs(10-b);
+        boolean closeB=abs(10-b)<abs(10-a);
+
+        if (tie)
+            c = 0;
+        else if (closeA)
+            c = a;
+         else if (closeB)
+            c = b;
+    return c;
     }
 
 }

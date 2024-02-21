@@ -6,17 +6,14 @@ public class StringE {
     }
 
     public static boolean stringE(String str) {
-
-        for (int i = 0; i < str.length(); i++) {
-            int counter = 0;
-            if (str.contains("e")) {
+        int counter=0;
+        for (int i = 0; i <str.length() ; i++) {
+            if (str.charAt(i) == 'e') {
                 counter++;
             }
-            if (counter >= 1 && counter <= 3) {
-                return true;
-            } else return false;
         }
-        return true;
+        boolean answer=(counter>=1 && counter<=3);
+        return answer?true:false;
     }
 
     }
